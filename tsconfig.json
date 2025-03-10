@@ -1,0 +1,63 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "esnext",
+        "noEmit": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "allowJs": true,
+        "isolatedModules": true,
+        "skipLibCheck": true,
+        "jsx": "preserve",
+        "esModuleInterop": true,
+        "experimentalDecorators": false,
+        // @deprecated
+        // Fix: Use string & keyof T to filter keys to those with string types.
+        // "keyofStringsOnly": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "types": [
+
+            "vitest/globals"
+        ],
+    },
+    "include": [
+        "src",
+        "reskript.webpack.config.ts",
+        "reskript.webpack.dev.ts",
+        "rsbuild.config.ts",
+        "rspack.config.ts",
+        "rspack.config.dev.ts",
+        "*.ts(x)?",
+        "debug/**/*.ts",
+        "debug/**/*.js",
+        "reskript.config.ts",
+        "vite.lishou.config.ts",
+        "prepareEnv.ts",
+        "debug/middleware/server.mjs",
+        "debug/proxyConfig.mjs",
+        "vite.escortIncentiveSDK.config.ts",
+        "vitest.config.ts",
+        "vite.test-setup.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "output"
+    ],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+        },
+    },
+}

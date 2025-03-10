@@ -1,0 +1,79 @@
+.@{one-theme-light-d22}:not(.@{one-invalid}) {
+    .one-theme-light-d22-style() {
+        transition: .1s;
+        background-color: @dls-color-translucent-1;
+        border-color: transparent;
+        box-shadow: none;
+        &:hover,
+        &:focus,
+        &:focus-within,
+        // &:active,
+        &[class*=input-focus],
+        &[class*=open],
+        &[class*=detail-focus],
+        &[class*=expanded] {
+            background-color: @dls-input-background-color;
+        }
+        &:hover {
+            border-color: @dls-color-brand-4;
+        }
+        &:focus,
+        &:focus-within,
+        // &:active,
+        &[class*=input-focus],
+        &[class*=open],
+        &[class*=detail-focus],
+        &[class*=expanded] {
+            border-color: @dls-input-border-color-focus;
+            box-shadow: @dls-input-shadow-focus;
+        }
+        &[class*=disabled]:hover,
+        &[class*=disabled]:focus,
+        &[class*=disabled]:active {
+            background-color: @dls-color-translucent-1;
+        }
+        &[class*=disabled]:hover {
+            border-color: transparent;
+        }
+    }
+    &.@{one-prefix}-input-all-container:not(.@{one-prefix}-time-picker-input) .@{one-prefix}-input,
+    &.@{one-prefix}-number-input-wrapper .@{one-prefix}-number-input-main,
+    &.@{one-prefix}-time-picker .@{one-theme-light-d22} .@{one-prefix}-input,
+    .@{one-theme-light-d22}.@{one-prefix}-input-affix-wrapper,
+    &.@{one-prefix}-cascader-picker,
+    &.@{one-prefix}-select,
+    &.@{one-prefix}-select-container .@{one-prefix}-select, // 多选
+    &.@{one-prefix}-textarea {
+        &.@{one-main} {
+            .one-theme-light-d22-style();
+        }
+    }
+    &.@{one-prefix}-time-picker-open .@{one-theme-light-d22} .@{one-prefix}-input.@{one-main} {
+        border-color: @dls-input-border-color-focus;
+        box-shadow: @dls-input-shadow-focus;
+        background-color: @dls-input-background-color;
+    }
+    &.@{one-prefix}-select-container .@{one-prefix}-select .@{one-prefix}-select-selection__choice,
+    &.@{one-prefix}-cascader-picker-multiple .@{one-prefix}-cascader-picker-result {
+        background-color: @dls-color-translucent-2;
+    }
+    &.@{one-prefix}-search-box-container {
+        .@{one-prefix}-search-box-detail.@{one-main} {
+            border: 1px solid;
+            .one-theme-light-d22-style();
+            .@{one-prefix}-search-box {
+                border: none!important;
+                background-color: transparent!important;
+                box-shadow: none;
+            }
+        }
+    }
+    &.@{one-prefix}-date-picker .@{one-main} {
+        .one-theme-light-d22-style();
+    }
+    &.@{one-prefix}-dropdown-button-containers {
+        .@{one-prefix}-dropdown-button-basic.@{one-main} {
+            .one-theme-light-d22-style();
+        }
+    }
+}

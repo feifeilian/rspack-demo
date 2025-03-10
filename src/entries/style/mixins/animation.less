@@ -1,0 +1,12 @@
+.common-animation (@animation-name, @animation-duration: @common-duration, @animation-timing-function: ease) {
+    animation: @animation-name @animation-duration @animation-timing-function;
+}
+
+@oneui-transition-duration: 0.2s;
+
+.oneui-transition(...) {
+    each(@arguments, {
+        transition-property+: @value;
+    });
+    transition-duration: @oneui-transition-duration;
+}

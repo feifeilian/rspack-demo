@@ -1,0 +1,146 @@
+@import "~less-plugin-dls/tokens/index.less";
+@import "./checkboxAndradio.less";
+@import "./input.less";
+@import "./cascaderPane.less";
+@import "./backTop.less";
+@import "./slider.less";
+@import "./light.less";
+
+@one-prefix: one;
+@one-invalid: ~"@{one-prefix}-invalid";
+@one-main: ~"@{one-prefix}-main";
+@one-focus: ~"@{one-prefix}-focus";
+@one-theme: ~"@{one-prefix}-theme";
+@one-theme-light-d22: ~"@{one-theme}-light-d22";
+
+@dls-dropdown-z-index: 1051;
+@dls-tooltip-z-index: 1051;
+@dls-menu-z-index: 1050;
+@dls-select-z-index: 1051;
+@dls-toast-z-index: 1052;
+@dls-dialog-z-index: 1040;
+@dls-popover-z-index: 1051;
+@affix-zindex: 1;
+@dls-badge-zIndex: 10;
+@dls-time-picker-z-index: 1051;
+
+@dls-dialog-screen-sm-max: 768px;
+
+@dls-select-multiple-width: 300px;
+
+@common-duration: 0.1s;
+
+//table
+@table-header-bg: @dls-table-header-background-color;
+@table-body-bg: @dls-table-cell-background-color;
+@table-header-border: 1px solid @dls-table-header-border-color;
+@table-body-border: 1px solid @dls-table-cell-border-color;
+@table-row-hover-bg: @dls-table-cell-background-color-hover;
+@table-selection-column-width: 64px;
+@table-checkbox-all-arrow-width: 96px;
+@table-filter-dropdown-min-width: 96px;
+@table-filter-dropdown-radius: 0;
+@table-filter-dropdown-menu-without-submenu-max-height: 400px;
+@table-expand-icon-width: 17px;
+@table-expand-icon-height: 17px;
+@table-expand-icon-border: 1px solid @dls-color-gray-0;
+@table-expand-hover-bg: @dls-color-gray-0;
+@table-footer-bg: @dls-background-color-base-1;
+@table-scroll-bar-height: 17px;
+@table-scroll-bar-width: 200px;
+@table-scroll-bar-outer-width: 400px;
+@table-scroll-bar-zindex: 6;
+@table-trigger-down-icon-left: 18px;
+@table-column-header-icon-top: 6px;
+@table-column-header-icon-right: 5px;
+@table-expanded-row-pagination-padding: @dls-padding-unit * 2;
+@table-scroll-header-padding: 20px;
+
+@dls-steps-item-vertical-tail-margin-left: 51px;
+@dls-steps-max-limit-height: 9999px;
+@dls-steps-desciption-max-width: 160px;
+@dls-steps-item-vertical-tail-small-margin-left: 49px;
+@dls-steps-vertical-min-height: 80px;
+@dls-steps-vertical-content-min-height: 48px;
+@dls-step-vertical-item-margin-top: 39px;
+@dls-step-vertical-item-small-margin-top: 37px;
+@dls-steps-item-content-width: 98px;
+@dls-steps-item-icon-vertical-label-margin-right: 35px;
+@dls-steps-max-screen-width: 480px;
+@dls-steps-item-tail-padding: 0 24px;
+
+@cascader-label-min-width: 140px;
+@cascader-clear-width: 12px;
+@cascader-zindex: 1051;
+
+@dls-date-picker-panel-height-s: 7 * @dls-button-height-s + 6 * @dls-padding-unit + 4 * @dls-padding-unit;
+@dls-date-picker-panel-height-m: 7 * @dls-button-height-m + 6 * @dls-padding-unit + 4 * @dls-padding-unit;
+
+@dls-number-input-strong-input-width: 58px;
+
+@dls-loading-transition: all @dls-transition-duration-normal @dls-transition-timing-function-linear;
+
+// Media queries breakpoints
+// Extra small screen / phone
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+// Small screen / tablet
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+// Medium screen / desktop
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+// Large screen / wide desktop
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+// Extra Large screen / full hd
+@screen-xl: 1600px;
+@screen-xl-min: @screen-xl;
+// provide a maximum
+@screen-xs-max: (@screen-sm-min - 1px);
+@screen-sm-max: (@screen-md-min - 1px);
+@screen-md-max: (@screen-lg-min - 1px);
+@screen-lg-max: (@screen-xl-min - 1px);
+
+//grid
+@grid-columns: 24;
+@grid-gutter-width: 0;
+
+@dls-carousel-button-zIndex: 10;
+@dls-carousel-half-mask-width: 20px;
+@dls-carousel-half-mask-right: 36px;
+@dls-carousel-mask-color: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 1%, @dls-color-gray-1 100%);
+
+@dls-progress-line-text-max-width: @dls-spacing-unit * 7;
+@dls-progress-line-operation-max-width: @dls-spacing-unit * 7;
+
+@common-duration: 0.1s;
+@ease-base-out: cubic-bezier(0.7, 0.3, 0.1, 1);
+@ease-base-in: cubic-bezier(0.9, 0, 0.3, 0.7);
+@ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+@ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+@ease-out-back: cubic-bezier(0.12, 0.4, 0.29, 1.46);
+@ease-in-back: cubic-bezier(0.71, -0.46, 0.88, 0.6);
+@ease-in-out-back: cubic-bezier(0.71, -0.46, 0.29, 1.46);
+@ease-out-circ: cubic-bezier(0.08, 0.82, 0.17, 1);
+@ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+@ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+@ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+@ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+@ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+
+@dls-cascasder-option-dropdown-max-height-xs: @dls-option-height-xs * 5 +
+  @dls-option-group-padding-y * 2;
+@dls-cascasder-option-dropdown-max-height-s: @dls-option-height-s * 5 +
+  @dls-option-group-padding-y * 2;
+@dls-cascasder-option-dropdown-max-height-m: @dls-option-height-m * 5 +
+  @dls-option-group-padding-y * 2;
+@dls-cascasder-option-dropdown-max-height-l: @dls-option-height-l * 5 +
+  @dls-option-group-padding-y * 2;
+
+// light-d22 主题特有
+@dls-button-background-color-normal-d22: @dls-color-translucent-1;
+@dls-button-background-color-normal-hover-d22: @dls-color-translucent-2;
+@dls-button-background-color-normal-active-d22: @dls-color-translucent-3;
+@dls-button-background-color-normal-disabled-d22: @dls-color-translucent-1;
