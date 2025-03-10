@@ -15,8 +15,7 @@
         "test:watch": "vitest"
     },
     "repository": {
-        "type": "git",
-        "url": "ssh://zhangbo35@icode.baidu.com:8235/baidu/fc-fe/fe-cangjie"
+        "type": "git"
     },
     "author": "lianxiaofei",
     "license": "UNLICENSED",
